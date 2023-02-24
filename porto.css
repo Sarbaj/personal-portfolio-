@@ -1,0 +1,471 @@
+*{
+padding: 0%;
+margin: 0%;    
+font-family: sans-serif;
+}
+html{
+scroll-behavior:smooth;
+}
+@media(max-width=890)
+{
+.mnu li a{
+color:red;}
+}
+.bgr{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/Space.jpg);
+   background-size: cover;
+    background-position: center;
+}
+.mnu{
+    width: 100%;
+    height: 15vh;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+.mnu h2{
+    color: black;
+    margin-right: 265px;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+.mnu li{
+    list-style: none;
+}
+.mnu li a{
+    text-decoration: none;
+    color: violet;
+    padding: 6px 10px;
+    background-color: black;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+transition: 0.3s ease-in linear;
+border-radius: 5px;
+margin-right: 25px;
+
+}
+.mnu li a:hover{
+    color:white;
+}
+.man{
+    width: 35%;
+    height: 40vh;
+    background-color: transparent;
+   position: relative;
+    top: 15%;
+    left: 11%;
+    padding-top: 35px;
+  
+
+}
+.man p{ color: white;}
+.man h4{
+    color: white;
+    text-transform: uppercase;
+    
+}
+.man h1{
+  color: white;
+  padding-top: 10px;
+}
+.man p{
+    padding-top: 10px;
+}
+.man span{
+    color: violet;
+}
+.man a{
+    text-decoration: none;
+    color: black;
+    background-color:violet;
+    padding: 6px 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
+    left: 0px;
+    transition: 0.3s;
+  
+}
+.man a:hover{
+    color:black;
+    background-color: violet;
+}
+.imgd{
+    width: 50%;
+    height: 80vh;
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    
+   
+}
+.imgd img{
+    width: 100%;
+    height: 80vh;
+    
+}
+.bgr2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/Space.jpg);
+    background-position: center;
+    background-size: cover;
+
+   
+  
+}
+.bgr2 .contb{
+    width: 100%;
+    height: 60vh;
+    background-color: transparent;
+    position: relative;
+    top: 20%;
+    
+}
+.contb h1{
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-left: 80px;
+    color:white;
+    position: relative;
+    margin-left: 50%;
+}
+.contb h1 span{
+  color:white;
+}
+.contb a{
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 6px 10px;
+    background-color:white;
+    position: relative;
+    top: 25px;
+  left: 80px;
+  text-transform: uppercase;
+  
+  margin-left: 50%;
+}
+.contb p{
+  color: white;
+    padding-top: 25px;
+    padding-left: 80px;  
+    text-transform:uppercase;
+    position: relative;
+    margin-left: 50%;
+  
+}
+.contb img{
+    width: 25px;
+  position: relative;
+  top: 45px;
+  left: 80px;
+  padding-left: 5px;
+  margin-left: 50%;
+display: inline-flex;
+
+}
+.icn {
+  width: 20%;
+  position: relative;
+  justify-content: space-between;
+}
+.contb .contb2{
+    position: relative;
+    border: 4px solid transparent;
+   background-color:transparent;
+    width: 30%;
+    height: 45vh;
+    top: -98%;
+    left: 60%;
+    background-repeat: no-repeat;
+    
+}
+.contb2 img{
+  width: 100%;
+    height: 75.5vh;
+    background-size: cover;
+    position: relative;
+    margin-left: -200%;
+}
+.bgr3{
+    width: 100%;
+    height: 100vh;
+background-image: url(../imgs/Space.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::selection{
+  color: #fff;
+  background: white;
+}
+.skill-bars{
+    position: relative;
+    top: 10%;
+    left: 20%;
+  padding: 25px 30px;
+  width: 600px;
+  background:transparent;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.skill-bars .bar span{
+  color: white;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: violet;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 90%;
+}
+.bar .progress-line.css span{
+  width: 95%;
+}
+.bar .progress-line.bootstrap span{
+  width: 85%;
+}
+.bar .progress-line.figma span{
+  width: 50%;
+}
+.bar .progress-line.graphic span{
+  width: 75%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: black;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "95%";
+}
+.progress-line.bootstrap span::after{
+  content: "85%";
+}
+.progress-line.figma span::after{
+  content: "50%";
+}
+.progress-line.graphic span::after{
+  content: "75%";
+}
+
+
+
+.bgr4{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/Space.jpg);
+    background-position: center;
+    background-size: cover;
+   font-family: sans-serif;
+   
+  
+
+}
+.hrme{
+    width: 42%;
+    height: 90vh;
+  background:none; 
+  position: relative;
+    border-radius: 10px;
+    left: 30%;
+  
+    text-transform: uppercase;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.hrme img{
+    width: 160px;
+    height: 160px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 33%;
+    margin-top: 20px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+  100%{
+    margin-top: 5px;
+   
+  }
+}
+.hrme h3{
+   
+    color:white;
+    padding-top: 40px;
+    position: relative;
+    margin-left: 16%;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: -7%;
+    padding-bottom: 80px;
+    
+}
+
+.hrme span{
+  color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-left: -19%;
+}
+.hrme a{
+    text-decoration: none;
+    color: black;
+    background-color:white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 50px;
+   
+    margin-left: 33%;
+}
+.bgr5{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/Space.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wid{
+  width: 100%;
+    height: 100vh;
+}
+.cnt{
+  width: 27%;
+  height: 70%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 15%;
+  left: 35%;
+  border-radius: 8px;
+}
+.cnt input{
+  justify-content: center;
+  align-items: center;
+}
+.cnt img{
+  width: 50px;
+  height: 50px;
+}
+.cnt input{
+  padding: 5px 5px;
+  width: 80%;
+  margin-bottom: 8px;
+  margin-left: 21px;
+}
+::placeholder{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.cnt a{
+  color: white;
+  background-color: black;
+ padding: 5px 107px;
+  position: relative;
+  top: 12px;
+  margin-left: 21px;
+}
+.cnt p{
+  color: black;
+  position: relative;
+  top: 26px;
+  cursor: pointer;
+  margin-left: 21px;
+}
+.cnt img{
+  margin-left: 38%;;
+  margin-top: 10px;
+}
+.cnt h3{
+  margin-left: 37.5%;;
+}
